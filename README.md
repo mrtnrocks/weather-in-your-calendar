@@ -1,3 +1,15 @@
+### Node.js Claude version
+
+The main differences between the PHP and Node.js code are:
+
+1. Loading the API key from a separate file.
+2. Using `require('url').parse(request.url, true).query` to load variables from the URL.
+3. Using the `fetch` API to load the JSON data from the API.
+4. Using Node.js-specific date/time formatting functions instead of PHP's.
+5. Streaming the ICAL file contents directly to the response object instead of echoing them.
+
+The overall logic and functionality of the code remains the same, just adapted to the Node.js environment.
+
 # Weather in your Calendar   ⛅️ 26°
 
 This is the code powering the [Weather in your Calendar](https://weather.vejnoe.dk/?from=github.com).
@@ -63,15 +75,4 @@ Your Browser | Emoji code
 
 [![Featured on Product Hunt](https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=242724&theme=light)](https://www.producthunt.com/posts/weather-in-your-calendar?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-weather-in-your-calendar)
 
-### Node.js Claude version
-
-The main differences between the PHP and Node.js code are:
-
-1. Loading the API key from a separate file.
-2. Using `require('url').parse(request.url, true).query` to load variables from the URL.
-3. Using the `fetch` API to load the JSON data from the API.
-4. Using Node.js-specific date/time formatting functions instead of PHP's.
-5. Streaming the ICAL file contents directly to the response object instead of echoing them.
-
-The overall logic and functionality of the code remains the same, just adapted to the Node.js environment.
 
